@@ -83,8 +83,17 @@
   .rating{display:flex; align-items:baseline; gap:12px; margin-top:26px;}
   .rating .num{font-family:'Cormorant Garamond',serif; font-size:2.6rem; font-weight:600; color:var(--gold-deep);}
   .rating .stars{color:var(--gold); letter-spacing:2px;}
-  .about-logo{width:100%; height:auto; max-height:340px; object-fit:contain; padding:30px; background:var(--panel); border:1px solid var(--line);}
-  .meaning{margin-top:30px; display:flex; flex-direction:column; gap:12px;}
+  .about-logo{
+    width:100%;
+    height:auto;
+    max-height:340px;
+    object-fit:contain;
+    padding:20px;
+    margin:0 auto;
+    background:var(--panel);
+    border:1px solid var(--line);
+}
+  .meaning{margin-top:30px;display:flex;flex-direction:column; gap:12px;padding-left:8px;}
   .meaning-row{display:flex; gap:16px; align-items:baseline; font-size:0.9rem;}
   .meaning-row .letter{font-family:'Cormorant Garamond',serif; font-weight:600; font-size:1.15rem; width:22px; flex-shrink:0;}
   .meaning-row .letter.v{color:var(--v);} .meaning-row .letter.i{color:var(--i);} .meaning-row .letter.b{color:var(--b);}
@@ -127,9 +136,26 @@
     .strip{gap:22px;}
   }
   @media (max-width:480px){
-    .hero{padding:70px 0 60px;}
-    .card{padding:32px 24px;}
+  .wrap{
+      padding:0 20px;
   }
+
+  .hero{
+      padding:70px 0 60px;
+  }
+
+  .card{
+      padding:32px 24px;
+  }
+
+  .about{
+      gap:40px;
+  }
+
+  .meaning-row{
+      gap:12px;
+  }
+}
   :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
 </style>
 </head>
